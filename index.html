@@ -100,11 +100,20 @@
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major">Check out our videos</h2>
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/WlPCeRJxLBo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									<div style="width:300px; float:right;"></div>
-								
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/t1kKF_qMD3g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
+									<style>
+ div.full-width {position:relative;float:left;width:100%;}
+ @media screen
+ and (min-width: 751px), screen and (min-device-width:751) {
+ div.video {position:relative;float:left;padding:5px;width:30%;}
+ iframe {width:100%;}
+ }
+ }
+ </style>
+ <div class="full-width">
+ <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/WlPCeRJxLBo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+ <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/t1kKF_qMD3g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	 
+ </div>
 									<section class="features">
 										<article>
 											<a href="#" class="image"><img src="images/aboutuscover.jpg" alt="" /></a>
